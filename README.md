@@ -3,7 +3,7 @@
 Exercicio 1
 Dado a estrutura:
 
-
+```
   class Livro (
     Long codigo,
     String titulo,
@@ -21,9 +21,9 @@ Dado a estrutura:
    
   class Profissao (Long codigo, String nome)
 
-  class Empresa (Long codigo, String nome)
-
-        // Exibir os livros publicados em 2017
+  class Empresa (Long codigo, String nome)
+```
+        // Exibir os livros publicados em 2017
         List<Livro> livros2017 = livros
                 .stream()
                 .filter(livro -> LocalDate.ofEpochDay(livro.getDataPublicacao().getTime()).getYear() == 2017)
