@@ -4,16 +4,16 @@ Exercicio 1
 Dado a estrutura:
 
 
-  class Livro {
-    Long codigo;
-    String titulo;
-    String subTitulo;
-    String ISBN;
-    Long numeroPaginas;
-    Date dataPublicacao;
-    Editora editora;
-    List<Autor> autores;
-  }
+  class Livro (
+    Long codigo,
+    String titulo,
+    String subTitulo,
+    String ISBN,
+    Long numeroPaginas,
+    Date dataPublicacao,
+    Editora editora,
+    List<Autor> autores
+  )
 
   class Editora (Long codigo, String nome, Date dataFundacao)
 
