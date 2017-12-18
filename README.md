@@ -3,7 +3,7 @@
 Exercicio 1
 Dado a estrutura:
 
-```
+```java
   class Livro (
     Long codigo,
     String titulo,
@@ -22,7 +22,7 @@ Dado a estrutura:
   class Profissao (Long codigo, String nome)
 
   class Empresa (Long codigo, String nome)
-```
+
         // Exibir os livros publicados em 2017
         List<Livro> livros2017 = livros
                 .stream()
@@ -65,3 +65,4 @@ Dado a estrutura:
                 .stream().parallel().flatMap(x -> x.stream()).collect(Collectors.toSet())
                 .stream().parallel().collect(Collectors.groupingBy(Autor::getEmpresa, Collectors.counting()));
         System.out.println(livrosPorEmpresa);
+    ```
